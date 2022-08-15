@@ -1,7 +1,6 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
 // pages & components
-import Home from './pages/Home'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Body from './pages/Body'
 import Navbar from './components/Navbar'
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
           <Routes>
             <Route 
               path="/" 
-              element={<Home />} 
+              element={<Body />} 
             />
           </Routes>
         </div>
@@ -24,4 +23,3 @@ function App() {
 }
 
 export default App;
-

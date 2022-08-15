@@ -1,113 +1,140 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Quicksand:wght@300;400&display=swap');
 /* layout */
 :root {
-  --primary: #1aac83;
-  --error: #e7195a;
-  --primary-hover: #198c6b;
+    --primary: #1aac83;
+    --error: #e7195a;
+    --primary-hover: #198c6b;
 }
+
 body {
-  background: #f1f1f1;
-  margin: 0;
-  font-family: "Poppins";
+    background: #25252f;
+    margin: 0;
+    font-family: "Poppins";
 }
+
 header {
-  background: #fff;
+    background: rgb(23, 23, 36);
 }
+
 header .container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
 header a {
-  color: #333;
-  text-decoration: none;
-}
-.pages{
-  max-width: 1400px;
-  padding: 20px;
-  margin: 0 auto;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    /* text-align: center; */
+    margin: 0 auto;
 }
 
-/* homepage */
-.home {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 100px;
-}
-.workout-details {
-  background: #fff;
-  border-radius: 4px;
-  margin: 20px auto;
-  padding: 20px;
-  position: relative;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
-}
-.workout-details h4 {
-  margin: 0 0 10px 0;
-  font-size: 1.2em;
-  color: var(--primary);
-}
-.workout-details p {
-  margin: 0;
-  font-size: 0.9em;
-  color: #555;
-}
-.workout-details span {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  background: #f1f1f1;
-  padding: 6px;
-  border-radius: 50%;
-  color: #333;
+.pages {
+    max-width: 1400px;
+    padding: 20px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
 }
 
-/* new workout form */
-label, input {
-  display: block;
+.todos{
+    background: rgb(23, 23, 36);
+    max-width: 700px;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 20px;
 }
-input {
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-form button {
-  background: var(--primary);
-  border: 0;
-  color: #fff;
-  padding: 10px;
-  font-family: "Poppins";
-  border-radius: 4px;
-  cursor: pointer;
+.addtodo{
+    text-align: center;
+    margin: 40px auto;
 }
 
-form button:hover{
-  background: var(--primary-hover);
-  transition: 0.2s;
+.addtodo input{
+    width: 30%;
+    height: 40px;
+    border: none;
+    border: 1px solid whitesmoke;
+    color: white;
+    font-size: 20px;
+    border-radius: 12px;
+    background: #2a2a2e;
+    text-indent: 10px;
 }
-div.error {
-  padding: 10px;
-  background: #ffefef;
-  border: 1px solid var(--error);
-  color: var(--error);
-  border-radius: 4px;
-  margin: 20px 0;
+
+.todosbody{
+    padding: 10px 0px;
+    font-family: 'QuickSand';
+    font-weight: 100;
 }
+
+.todo h2{
+    padding: 10px 20px;
+    width: fit-content;
+    margin: 0 auto;
+    color: white;
+    /* padding: 10px; */
+}
+
+.todo p{
+    margin-top: 5px;
+    font-size: small;
+    color: gray;
+}
+
+input.checkbox{
+    width: 20px;
+    height: 20px;
+    /* padding-top: 15px; */
+}
+
+input.checkbox{
+    position: absolute;
+    margin-top: 8px;
+    margin-left: -80px;
+    cursor: pointer;
+}
+
+span.material-symbols-outlined{
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 6px;
+}
+
+.material-symbols-outlined{
+    cursor: pointer;
+}
+
+.material-symbols-outlined:hover{
+    color: gray;
+    transition: 0.2s;
+}
+
+div.todo:hover{
+    max-width: 400px;
+    margin: 0 auto;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    transition: 0.2s;
+}
+
+.done{
+    text-decoration: line-through;
+    font-weight: 100;
+}
+
 input.error {
-  border: 1px solid var(--error);
+    border: 1px solid var(--error);
 }
 
-.empty{
-  color: gray;
-  margin: 0 auto;
+div.empty h4{
+    /* color: rgb(158, 29, 29); */
+    margin: 10px auto;
+}
+
+.notodo{
+    padding: 20px 0px;
 }
